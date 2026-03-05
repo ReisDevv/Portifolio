@@ -111,26 +111,52 @@ section
 /*-------------------------------------------------*/
 
 /* About me */
-#About
+#About 
 {
-    max-width: 1000px;
-    margin: 0 auto;
+    max-width: 700px;
+    flex: 1;
+}
+
+#AboutMe {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    padding: 80px 0 80px 80px;
+    overflow: hidden;
 }
 
 #About h1
 {
-    font-size: 68px
+    font-size: 68px;
 }
 
 #About h2
 {
     margin-bottom: 10px;
     font-size: 38px;
+    color: var(--cor-destaque);
 }
 
 #About p
 {
+    font-size: 20px;
     font-weight: 300;
+    margin-top: 38px;
+}
+
+.photo {
+    position: sticky;
+    top: 100px;
+    flex-shrink: 0;
+    margin-left: auto;
+}
+
+.photo img {
+    width: 780px;
+    height: 800px;
+    object-fit: cover;
+    border-radius: 12px 0 0 12px;
+    display: block;
 }
 /*-------------------------------------------------*/
 
@@ -176,10 +202,11 @@ nav a:hover {
 /* Links da Navegação */
 .links
 {
-    gap: 20px;
+    gap: 45px;
     display: flex;
     top: 0;
-    font-weight: 400    ;
+    font-weight: 400;
+    font-size: 18px;
 }
 
 /*-------------------------------------------------*/
