@@ -1,0 +1,229 @@
+/* Global */
+:root 
+{
+    --cor-fundo-principal: #fff7f3;
+    --cor-fundo-secundario: #fff7f3;
+    --cor-texto: #332e2e;
+    --cor-destaque: #cc00ff;
+    --cor-destaque-hover: #cb2bf3;
+    scroll-behavior: smooth;
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    background-color: var(--cor-fundo-principal);
+    padding-top: 60px;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+}
+/*-------------------------------------------------*/
+
+/* HERO */
+#hero
+{
+    min-height: 100vh; /* Ocupa 100% da tela visivel */
+    display: flex; 
+    align-items: center; /* Alinha itens no centro */
+    flex-direction: column; /* Alinha os itens verticalmente */
+    justify-content: center; /* centraliza verticalmente */
+    padding: 0 60px; /* respiro na lateral */  
+}
+
+#hero h1 
+{
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 8px;
+
+    animation-fill-mode: forwards;
+    opacity: 0;
+    animation: fadeUp 0.8s ease forwards;
+}
+
+#hero h3
+{
+    margin-bottom: 24px;
+    
+    color: var(--cor-destaque);
+    animation: fadeUp 0.8s ease forwards;
+    animation-delay: 0.3s;
+    opacity: 0;
+}
+
+.btn {
+    font-weight: 400;
+    padding: 10px;
+    border: solid 1px var(--cor-destaque);
+    border-radius: 15px;
+    display: inline-block;
+    margin: 16px 0;
+    animation: fadeUp 0.8s ease forwards;
+    animation-delay: 0.6s;
+    opacity: 0;
+}
+
+.btn:hover {
+    color: var(--cor-destaque-hover);
+    box-shadow: 0 0 10px var(--cor-destaque-hover);
+}
+/*-------------------------------------------------*/
+
+/* Keyframes */
+@keyframes fadeUp
+{
+    from
+    {
+        transform: translateY(30px); 
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+/*-------------------------------------------------*/
+
+/* Textos */
+p,h1,h2,li
+{
+    color: var(--cor-texto);
+}
+/*-------------------------------------------------*/
+
+/* Seções */
+section
+{
+    background-color: var(--cor-fundo-secundario);
+    padding: 60px 20px;
+    margin-bottom: 10px;
+    text-align: left
+}
+/*-------------------------------------------------*/
+
+/* About me */
+#About
+{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+#About h1
+{
+    font-size: 68px
+}
+
+#About h2
+{
+    margin-bottom: 10px;
+    font-size: 38px;
+}
+
+#About p
+{
+    font-weight: 300;
+}
+/*-------------------------------------------------*/
+
+/* Div skills */
+#skills 
+{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+/*-------------------------------------------------*/
+
+/* Div contact */
+#contact 
+{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+/*-------------------------------------------------*/
+
+/* Navegação */
+nav
+{
+    position: fixed;
+    top: 0;
+    display: flex;
+    background-color: var(--cor-fundo-secundario);
+    padding: 15px;
+    padding-right: 35px;
+    width: 100%;
+    gap: 5px;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+nav a:hover {
+    color: var(--cor-destaque-hover);
+    transition: box-shadow 0.3s ease;
+}
+/*-------------------------------------------------*/
+
+/* Links da Navegação */
+.links
+{
+    gap: 20px;
+    display: flex;
+    top: 0;
+    font-weight: 400    ;
+}
+
+/*-------------------------------------------------*/
+
+/* Logo "NR" */
+.logo {
+    color: var(--cor-destaque);
+    font-size: medium;
+    font-weight: 400;
+    border: solid 1px black;
+    border-radius: 100px;
+    padding: 5px 10px;
+}
+/*-------------------------------------------------*/
+
+a
+{
+    text-decoration: none;
+    color: var(--cor-destaque);
+}
+
+.projects
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.card
+{
+    background-color: var(--cor-fundo-secundario);
+    padding: 10px;
+    border-radius: 10px;
+    border: solid 1px var(--cor-destaque);
+    cursor: pointer;
+    max-height: 200px;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease;
+}
+
+.card:hover
+{
+    color: var(--cor-destaque-hover);
+    box-shadow: 0 0 10px var(--cor-destaque-hover);
+}
+
+
