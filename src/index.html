@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portifolio</title>
+    <title>Portifólio</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
 
     <nav id="navegacao">
@@ -16,37 +20,46 @@
             <span class="logo">NR</span>
         </a>
         <div class="links">
-            <a href="about.html" id="ahref1">Sobre</a>
-            <a href="index.html#projects" id="ahref2">Projetos</a>
-            <a href="index.html#skills" id="ahref3">Habilidades</a>
-            <a href="index.html#contact" id="ahref4">Contate-me</a>
+            <a href="about.html">Sobre</a>
+            <a href="#projects">Projetos</a>
+            <a href="#skills">Habilidades</a>
+            <a href="#contact">Contate-me</a>
         </div>
     </nav>
+
     <section id="hero">
         <h1>Nelson dos Reis Gomes Souza</h1>
         <h3>Desenvolvedor BackEnd</h3>
-            <a href="about.html" class="btn">
-                Sobre Mim
-            </a>
+        <a href="about.html" class="btn">Sobre Mim</a>
     </section>
-    <section id="projects">
-        <h2>projects</h2>
-        <div class="projects">
-            <div class="card">
-                <h2>PontoApp</h2>
-                <p>Desenvolvi um aplicativo para bater meu ponto na folha de frequencia automaticamente conforme ligo ou desligo do pc</p>
-                <a href="Exemplo">PontoApp</a>
-            </div>
 
-            <div class="card">
-                <h2>Exemplo</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum eveniet odio cum repudiandae autem temporibus modi necessitatibus quidem numquam accusantium quae vitae obcaecati nesciunt totam sapiente, vel, aliquid corrupti commodi.</p>
-                <a href="Exemplo">Exemplo</a>
+    <section id="projects">
+        <h2>Projetos</h2>
+        <div class="carrossel">
+            <div class="carrossel-wrapper">
+                <div class="carrossel-track">
+                    <div class="card">
+                        <h2>PontoApp</h2>
+                        <p>Desenvolvi um aplicativo para bater meu ponto na folha de frequencia automaticamente conforme
+                            ligo ou desligo do pc</p>
+                        <a href="#">PontoApp</a>
+                    </div>
+                    <div class="card">
+                        <h2>Exemplo</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum eveniet odio cum
+                            repudiandae autem temporibus modi necessitatibus quidem numquam accusantium quae vitae
+                            obcaecati nesciunt totam sapiente.</p>
+                        <a href="#">Exemplo</a>
+                    </div>
+                </div>
             </div>
+            <button class="anterior">←</button>
+            <button class="proximo">→</button>
         </div>
     </section>
+
     <section id="skills">
-        <div id="skills">
+        <div id="divSkills">
             <h2>Minhas skills</h2>
             <h3>Hard skills</h3>
             <ul>
@@ -61,14 +74,15 @@
             </ul>
             <h3>Soft skills</h3>
             <ul>
-                <li>trabalho em equipe</li>
-                <li>comunicação</li>
-                <li>proatividade</li>
+                <li>Trabalho em equipe</li>
+                <li>Comunicação</li>
+                <li>Proatividade</li>
             </ul>
         </div>
     </section>
+
     <section id="contact">
-        <div id="contact">
+        <div id="divContato">
             <h2>Me contate!</h2>
             <div class="linkedin">
                 <a href="https://www.linkedin.com/in/nelsonreisgomes/">Linkedin</a>
@@ -81,5 +95,8 @@
             </div>
         </div>
     </section>
+
+    <script src="../js/script.js"></script>
 </body>
+
 </html>
