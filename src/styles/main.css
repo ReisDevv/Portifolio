@@ -27,6 +27,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    overflow-x: hidden;
 }
 
 p,
@@ -180,7 +181,7 @@ nav a:hover {
     border: solid 1px var(--cor-destaque);
     cursor: pointer;
     overflow: hidden;
-    transition: box-shadow 0.3s ease;
+    transition: transform 0.4s ease,box-shadow 0.4s ease;
 }
 
 .card h2 {
@@ -198,8 +199,8 @@ nav a:hover {
 }
 
 .card:hover {
-    box-shadow: 0 0 10px var(--cor-destaque-hover);
-    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(204, 0, 255, 0.2);
+    transform: scale(1.03) translateY(-8px);
 }
 
 /* KEYFRAME CARROSSEL */
@@ -388,4 +389,76 @@ footer {
     font-weight: 300;
     opacity: 0.7;
     color: var(--cor-destaque);
+}
+
+/*  */
+
+/* BOTÃO DE TROCA DE IDIOMA */
+.btn-idioma {
+    background-color: transparent;
+    color: var(--cor-destaque);
+    border: 1px solid var(--cor-destaque);
+    padding: 6px 14px;
+    border-radius: 15px;
+    font-size: 14px;
+    font-weight: 400;
+    transition: all 0.3s ease;
+    display: inline-block;
+    line-height: 1;
+}
+
+.btn-idioma:hover {
+    background-color: var(--cor-destaque);
+    color: var(--cor-fundo-principal);
+    box-shadow: 0 0 12px var(--cor-destaque-hover);
+    transform: translateY(-2px);
+}
+/*  */
+
+/* SKILLS */
+.skills-categoria {
+    margin-bottom: 40px;
+    /* Dá um respiro entre as hard e soft skills */
+}
+
+.skills-categoria h3 {
+    color: var(--cor-destaque);
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+/* O container que segura os cards */
+.skills-grid {
+    display: grid;
+    /* Essa é a linha de ouro: cria colunas de no mínimo 160px que se adaptam sozinhas à tela! */
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 20px;
+    list-style: none;
+    /* Tira as bolinhas padrão do HTML */
+    padding: 0;
+}
+
+/* O visual do Card individual */
+.skills-grid li {
+    background-color: var(--cor-fundo-secundario);
+    border: 1px solid var(--cor-destaque);
+    border-radius: 12px;
+    padding: 15px 10px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--cor-texto);
+    transition: all 0.3s ease;
+    cursor: default;
+    /* Deixa o mouse com a seta normal, pois não é um link */
+}
+
+/* O Efeito Hover (Levanta e brilha!) */
+.skills-grid li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(204, 0, 255, 0.2);
+    /* Sombra roxa suave */
+    background-color: var(--cor-destaque);
+    color: var(--cor-fundo-principal);
+    /* O texto fica clarinho pra dar contraste */
 }
