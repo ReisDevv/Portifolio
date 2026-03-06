@@ -1,40 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Skills</title>
+    <meta name="google" content="notranslate">
+    <title>Skills - Nelson Reis</title>
     <link rel="stylesheet" href="/styles/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
-    <section id="skills">
+    <nav id="navegacao">
+        <a href="/index-en">
+            <span class="logo">NR</span>
+        </a>
+        <div class="links">
+            <a href="/about-en">About</a>
+            <a href="/index-en#projects">Projects</a>
+            <a href="/skills-en">Skills</a>
+            <a href="/index-en#contact">Contact</a>
+            <a href="/skills" class="btn-idioma">PT 🇧🇷</a>
+        </div>
+    </nav>
+
+    <section id="skills" style="min-height: 80vh;">
         <div id="divSkills">
             <h2>My skills</h2>
-    
-            <button class="Hardskills">
+            <div class="skills-categoria">
                 <h3>Hard skills</h3>
-            </button>
-    
-            <ul>
-                <li>C#</li>
-                <li>Web API REST</li>
-                <li>Entity Framework</li>
-                <li>LINQ</li>
-                <li>Clean Architecture</li>
-                <li>MVC</li>
-                <li>MySQL</li>
-                <li>Git</li>
-            </ul>
-    
-            <button class="Softskills">
+                <ul class="skills-grid">
+                    <li>C#</li>
+                    <li>Web API REST</li>
+                    <li>Entity Framework</li>
+                    <li>LINQ</li>
+                    <li>Clean Architecture</li>
+                    <li>MVC</li>
+                    <li>MySQL</li>
+                    <li>Git</li>
+                </ul>
+            </div>
+            <div class="skills-categoria">
                 <h3>Soft skills</h3>
-            </button>
-            <ul>
-                <li>Teamwork</li>
-                <li>Communication</li>
-                <li>Proactivity</li>
-            </ul>
+                <ul class="skills-grid">
+                    <li>Teamwork</li>
+                    <li>Communication</li>
+                    <li>Proactivity</li>
+                </ul>
+            </div>
         </div>
     </section>
+
+    <footer>
+        <div class="footer-esquerda">
+            <h2>Nelson dos Reis Gomes Souza</h2>
+            <p>Backend Developer</p>
+        </div>
+        <div class="footer-direita">
+            <div class="footer-coluna">
+                <a href="/about-en">About</a>
+                <a href="/index-en#projects">Projects</a>
+                <a href="/skills-en">Skills</a>
+            </div>
+            <div class="footer-coluna">
+                <a href="mailto:nelsondosreis@prodam.sp.gov.br">Email</a>
+                <a href="https://www.linkedin.com/in/nelsonreisgomes/">LinkedIn</a>
+                <a href="#">GitHub</a>
+            </div>
+        </div>
+    </footer>
+    <script src="/scripts/main.js"></script>
 </body>
+
 </html>
